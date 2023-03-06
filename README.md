@@ -1,4 +1,4 @@
-<h1 align="center"> Tinder evangelico</h1>
+<h1 align="center">💜Tinder evangelico✝️</h1>
 
 ## :memo: Descrição
 Projeto para a disciplina CAP, um tinder só que para evangélicos.
