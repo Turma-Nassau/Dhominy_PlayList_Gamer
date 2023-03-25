@@ -1,10 +1,10 @@
-<h1 align="center"> DhominySan_TinderEvangelico </h1>
+<h1 align="center"> 💀Rádio De Rock💀 </h1>
 
 ## :memo: Descrição
-Projeto para a disciplina CAP, um tinder só que para evangélicos.
+Um site para ouvir músicas do gênero Rock.
 
 ## :books: Funcionalidades
-* <b>Funcionalidades </b>:  Neste site, o usuário poderá criar sua conta, editar seu perfil e ver outros perfis, sendo assim um site de relacionamentos.
+* <b>Funcionalidades </b>:  Neste site, o usuário poderá ouvir X musicas de forma padrão ou de forma aleatória.
 
 ## :wrench: Tecnologias utilizadas
 * HTML
@@ -13,6 +13,7 @@ Projeto para a disciplina CAP, um tinder só que para evangélicos.
 
 ## :soon: Implementação futura
 * No projeto possíveis mudanças podem ocorrer durante sua fase de desenvolvimento.
+* Uma das possíveis implementacões será links para rádio de outros gêneros musicais.
 
 ## :handshake: Colaboradores
 <table>
