@@ -1,12 +1,12 @@
 {
-  "name": "testerr-main",
+  "name": "dhominyrr",
   "version": "1.0.0",
   "description": "* Tocar Música\r * Avançar Música\r * Reprodução Aleatória\r * Voltar Música\r * Pausar Música",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "dhominy",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -14,6 +14,7 @@
     "express-handlebars": "^7.0.7",
     "mysql2": "^3.2.3",
     "nodemon": "^2.0.22",
-    "sequelize": "^6.31.0"
+    "sequelize": "^6.31.0",
+    "swagger": "^0.7.5"
   }
 }
