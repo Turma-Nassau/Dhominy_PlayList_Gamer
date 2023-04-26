@@ -1,37 +1,55 @@
-const express = require('express')
-const app = express()
-const port = 5555
-const musicas = require("./routes/musicas")
+const express = require('express');
+const app = express();
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
-app.get('/1', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
-app.get('/2', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
-app.get('/3', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
-app.get('/4', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
-app.get('/5', function(req, res){
-  res.sendFile(__dirname + '/index.html')
-})
 
-// EM BREVE -- 
-// Cada numero é o ID de uma musica que esta sendo reproduzida
+const fs = require('fs');
+let PORT = 5555;
+const bodyParser = require('body-parser');
+const swaggerFile = require('./swagger_output.json');
+const swaggerUi = require('swagger-ui-express');
 
-app.use(express.static(__dirname + '/extra'));
-app.use(express.static(__dirname + '/extra2'));
-//rotas
-app.use('/musicas', musicas)
 
-//app.listen(port, () => {
- // console.log(`Example app listening on port ${port}`)})
- app.listen(5555, function(){
-  console.log("Servidor Rodando")
-});
+const musicaRoutes = require('./routes/musicaRoutes')
+const { sequelize } = require('./models')
+
+
+app.use(logger)
+
+const connectDB = async () => {
+    console.log('Checando conexao com banco de dados');
+    try {
+        await sequelize.authenticate();
+        console.log('Banco de dados Conectado');
+    }
+    catch (e) {
+        console.log('Conexao falhou', e);
+        process.exit(1)
+    }
+}
+
+(async () => {
+    await connectDB();
+    app.use(bodyParser.json())
+
+    app.use(bodyParser.urlencoded({
+        extended: true,
+    }))
+
+    
+    app.use('/api/musica', musicaRoutes);
+    app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile));
+
+    app.listen(PORT, () => {
+        console.log(`Rodando na Porta ${PORT}.`)
+    })
+
+})()
+
+function logger(request, response, next) {
+    let log = `${new Date()}, ${request.method}, ${request.url}, ${request.body} \n`;
+    fs.appendFile('./LOGGING.log', log, (err) => {
+        if (err) throw err;
+        console.log(log)
+    })
+    next()
+}
