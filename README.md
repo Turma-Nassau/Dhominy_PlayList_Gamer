@@ -21,9 +21,7 @@ Vai reproduzir as músicas de uma pasta local.
 ```json
 musica = {
     titulo: String,
-    artista: String,
-    imagem: String, # 64 bits ou url da imagem
-    endereco: String, # caminho da música no disco, nome do arquivo físico
+    artista: String
 } 
 ```
 
@@ -33,14 +31,3 @@ Pega a próxima música no disco.
 
 ### Aleatório
 Define uma função que retorna um número aleatório entre 1 e x=length(arquivos de músicas na pasta)
-
-
-## Passos
-1. Clona o projeto na sua máquina
-2. Adiciona as alterações
-3. Dá um commit e pus
-```bash
-git add --all
-git commit -m "Sua mensagem explicando as alterações"
-git push
-```
