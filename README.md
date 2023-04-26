@@ -14,9 +14,8 @@ Vai reproduzir as músicas de uma pasta local.
 
 ## Modelo de Dados
 ### Entidade Música
-* Nome do artista
 * Título da música
-* Imagem
+* Nome do artista
 
 ```json
 musica = {
