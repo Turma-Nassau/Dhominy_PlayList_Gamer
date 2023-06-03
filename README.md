@@ -7,6 +7,7 @@ Site para ouvir musicas enquanto joga
 * Repetir Música
 * Voltar Música
 * Pausar Música
+* Avançar e voltar 5 segundos da musica atual
 
 Vai reproduzir as músicas de uma pasta local.
 
