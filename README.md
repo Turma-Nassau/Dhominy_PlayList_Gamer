@@ -1,9 +1,10 @@
-# Radio de Rock
+# PlayList Gamer
+Site para ouvir musicas enquanto joga
 
 ## Funcionalidades
 * Tocar Música
 * Avançar Música
-* Reprodução Aleatória
+* Repetir Música
 * Voltar Música
 * Pausar Música
 
@@ -19,6 +20,7 @@ Vai reproduzir as músicas de uma pasta local.
 
 ```json
 musica = {
+    id: String,
     titulo: String,
     artista: String
 } 
@@ -28,5 +30,9 @@ musica = {
 ### Normal
 Pega a próxima música no disco.
 
-### Aleatório
-Define uma função que retorna um número aleatório entre 1 e x=length(arquivos de músicas na pasta)
+### Modo de Repetição
+Fica reproduzindo a mesma musica infinitamente, ate o usuario voltar para o modo de reprodução normal
+
+## Para Funcionar:
+### npm start (na pasta Client)
+### Servidor vai rodar em: http://localhost:3000
