@@ -34,5 +34,6 @@ Pega a próxima música no disco.
 Fica reproduzindo a mesma musica infinitamente, ate o usuario voltar para o modo de reprodução normal
 
 ## Para Funcionar:
-### npm start (na pasta Client)
+### npm install (na pasta client)
+### npm start (na pasta client)
 ### Servidor vai rodar em: http://localhost:3000
