@@ -1,0 +1,88 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(45deg, #000000, #b806ff);
+  background-size: 200% 200%;
+  font-family: Arial, sans-serif;
+}
+
+.song-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.song-container img {
+  width: 340px;
+  height: 340px;
+  
+}
+
+
+h1 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.song-title {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.buttons-container button {
+  margin-right: 10px;
+}
+
+.buttons-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b806ff;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-container button:hover {
+  background-color: #acacac;
+}
+
+.audio-player {
+  margin-top: 20px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.audio-player progress::-webkit-progress-bar {
+  background-color: #f5f5f5;
+}
+
+.audio-player progress::-webkit-progress-value {
+  background-color: #b806ff;
+}
+
+.audio-player progress::-moz-progress-bar {
+  background-color: #b806ff;
+}
+
+.audio-player .slider-handle {
+  background-color: #b806ff;
+}
+
+.audio-player .slider-handle:active,
+.audio-player .slider-handle:focus {
+  box-shadow: none;
+}
