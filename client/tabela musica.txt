@@ -1,0 +1,29 @@
+create database musicas;
+use musicas;
+
+
+create table musica(
+id numeric(30) primary key,
+titulo varchar(40) not null,
+artista varchar(20) null
+);
+
+
+
+insert into musica (id,titulo,artista)
+values (1, 'Enemy', 'Imagine Dragons');
+
+insert into musica (id,titulo,artista)
+values (2, 'Neon Blade Phonk', 'z');
+
+insert into musica (id,titulo,artista)
+values (3, 'ROXANNE', 'Arizona Zervas');
+
+insert into musica (id,titulo,artista)
+values (4, 'Blueberry Faygo', 'Lil Mosey');
+
+insert into musica (id,titulo,artista)
+values (5, 'Wake Up', 'Lil Xan');
+
+insert into musica (id,titulo,artista)
+values (6, 'Rich Bitch', 'Bankrol Hayden');
